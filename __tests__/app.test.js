@@ -116,7 +116,7 @@ describe('app', () => {
 
           it('status: 200 - responds with an array of people objects', () => {
             return request(app)
-              .get('/api/people')
+              .get('/api/people/london')
               .expect(200)
               .then(({ body }) => {
                 body.people.forEach(article => {
