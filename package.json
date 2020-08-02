@@ -1,0 +1,58 @@
+{
+  "name": "bpdts-assessment",
+  "author": "James Oliver",
+  "version": "1.0.0",
+  "description": "REST API that returns people who are listed as either living in London, or whose current coordinates are within 50 miles of London",
+  "main": "app.js",
+  "license": "ISC",
+  "homepage": "https://github.com/J-R-Oliver/dwp-bpdts-assessment#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-R-Oliver/dwp-bpdts-assessment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/J-R-Oliver/dwp-bpdts-assessment/issues"
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "start-dev": "nodemon listen.js",
+    "start": "node listen.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.9.0",
+    "eslint-plugin-jest-formatting": "^1.2.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-security": "^1.4.0",
+    "husky": "^4.2.5",
+    "jest": "^25.5.4",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.5",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "express-winston": "^4.0.5",
+    "haversine": "^1.1.1",
+    "winston": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
