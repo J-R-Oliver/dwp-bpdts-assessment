@@ -31,3 +31,37 @@ exports.apiGetAllUsers = jest.fn(() => {
 
   return Promise.resolve({ data });
 });
+
+exports.apiGetUsersLondon = jest.fn(() => {
+  const data = [
+    {
+      id: 135,
+      first_name: 'Mechelle',
+      last_name: 'Boam',
+      email: 'mboam3q@thetimes.co.uk',
+      ip_address: '113.71.242.187',
+      latitude: -6.5115909,
+      longitude: 105.652983
+    },
+    {
+      id: 396,
+      first_name: 'Terry',
+      last_name: 'Stowgill',
+      email: 'tstowgillaz@webeden.co.uk',
+      ip_address: '143.190.50.240',
+      latitude: -6.7098551,
+      longitude: 111.3479498
+    },
+    {
+      id: 520,
+      first_name: 'Andrew',
+      last_name: 'Seabrocke',
+      email: 'aseabrockeef@indiegogo.com',
+      ip_address: '28.146.197.176',
+      latitude: '27.69417',
+      longitude: '109.73583'
+    }
+  ];
+
+  return Promise.resolve({ data });
+});
