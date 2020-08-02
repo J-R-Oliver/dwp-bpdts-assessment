@@ -5,3 +5,5 @@ const instance = axios.create({
 });
 
 exports.apiGetAllUsers = () => instance.get('/users');
+
+exports.apiGetUsersLondon = () => instance.get('/city/London/users');
