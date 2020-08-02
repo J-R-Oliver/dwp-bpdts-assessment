@@ -6,3 +6,7 @@ exports.handle404 = (req, res) => {
 exports.handleInternalErrors = (err, req, res, next) => {
   res.status(500).send({ msg: 'Internal Server Error' });
 };
+
+exports.handleUnsupportedMethods = (req, res) => {
+  res.status(405).send({ msg: 'Method Not Allowed' });
+};
