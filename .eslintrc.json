@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:jest/recommended",
+    "plugin:jest-formatting/recommended",
+    "plugin:node/recommended",
+    "plugin:security/recommended"
+  ],
+  "plugins": ["prettier", "jest", "jest-formatting", "node", "security"],
+  "rules": {
+    "node/no-unpublished-require": [
+      "error",
+      {
+        "allowModules": ["supertest"]
+      }
+    ]
+  }
+}
