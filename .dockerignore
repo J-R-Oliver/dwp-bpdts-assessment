@@ -5,7 +5,7 @@
 !controllers
 !models
 !routes
-!utils/*
+!utils
 !app.js
 !listen.js
 !package*.json
