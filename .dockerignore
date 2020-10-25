@@ -1,0 +1,11 @@
+# Default ignore everything
+*
+
+# Add files or folders starting with !
+!controllers
+!models
+!routes
+!utils/*
+!app.js
+!listen.js
+!package*.json
