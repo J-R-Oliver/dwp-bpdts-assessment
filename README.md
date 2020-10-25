@@ -71,3 +71,17 @@ This project is being linted with `eslint` configured with the following rule se
 - [Axios](https://github.com/axios/axios) - a promise based HTTP client for the browser and node.js.
 - [Haversine](https://github.com/njj/haversine#readme) -
   a simple haversine formula module for Node.js
+
+## Docker
+
+A `Dockerfile` has been provided and a Docker image can be created with the following command.
+
+```
+docker build -t dwp-bpdts-assessment .
+```
+
+You can then create a container from the image and start the server with Docker.
+
+```
+docker run -d --name dwp-bpdts-assessment  -p9090:9090 dwp-bpdts-assessment
+```
